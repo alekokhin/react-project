@@ -1,4 +1,3 @@
-import { WidthFull } from "@mui/icons-material";
 import React, { createContext, useState } from "react";
 
 export const ThemeContext = createContext({
@@ -20,7 +19,7 @@ const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
 
   return (
     <ThemeContext.Provider value={{ isDark, toggleTheme }}>
-          <div style={{ ...theme, width: "100%", height: "100%", padding: '10px', margin: 0 }}>{children}</div>
+          <div style={{ ...theme,  height: "100%", padding: '10px', margin: 0 }}>{children}</div>
     </ThemeContext.Provider>
   );
 };

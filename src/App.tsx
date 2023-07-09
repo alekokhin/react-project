@@ -1,4 +1,3 @@
-import React, { useContext } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import NotFound from "./not-found";
 import Home from "./pages/home";
@@ -9,6 +8,8 @@ import {
   Finish,
   FullName,
 } from "./pages/registration/fullName";
+import ToDosPage from "./pages/todos";
+import TodoDetailsPage from "./pages/todos/detail";
 
 
 function App() {
@@ -20,6 +21,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />}>
             <Route path="*" element={<NotFound />} />
+            {/* ============================================= */}
+            <Route path="/todos" element={<ToDosPage />}/>
+            <Route path="/todos/:id" element={<TodoDetailsPage />} />
+            {/* ============================================= */}
             <Route path="/registration" element={<Registration />}>
               <Route path="full-name" element={<FullName />} />
               <Route path="email" element={<Email />} />
