@@ -27,6 +27,13 @@ const Home = () => {
         >
           registration
         </Button>
+        <Button
+          variant="contained"
+          color="primary"
+          onClick={() => navigate("/todos")}
+        >
+          todo
+        </Button>
         <IconButton
           color="inherit"
           onClick={toggleTheme}

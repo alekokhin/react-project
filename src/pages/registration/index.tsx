@@ -33,7 +33,7 @@ const Registration = () => {
           height: "300px",
         }}
       >
-        <ThemeProvider theme={theme}>
+        <ThemeProvider theme={theme}  >
           <Stepper activeStep={activeStep} style={{width:"100%"}}>
             {steps.map((label, index) => (
               <Step key={index}>
@@ -54,7 +54,7 @@ const Registration = () => {
               color="primary"
               onClick={() => {
                 setActiveStep(activeStep - 1);
-                navigate(`${steps[activeStep - 1]}`);
+                navigate(-1);
               }}
             >
               back
