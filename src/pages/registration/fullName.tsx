@@ -3,7 +3,7 @@ import { TextField, TextareaAutosize } from "@mui/material";
 export const FullName = () => {
   return (
     <>
-      <div>
+      <div style={{display:"flex", justifyContent:"space-evenly",flexDirection:"column",height:"100%"}} >
         <TextField type="text" label="Name" variant="outlined" />
         <TextField type="text" label="Surname" variant="outlined" />
       </div>
@@ -22,7 +22,7 @@ export const Description = () => {
     <>
       <TextareaAutosize
         placeholder="Enter your text here"
-        style={{ width: "50%", height: "200px", fontSize: "18px" }}
+        style={{ width: "500px", height: "200px", fontSize: "18px" }}
       />
     </>
   );
