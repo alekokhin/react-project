@@ -34,14 +34,14 @@ const ToDosPage = () => {
     <WithLoader isLoading={isLoading}>
        <div
         style={{
+          marginTop:"50px",
           display: "flex",
           alignItems: "center",
-          justifyContent: "space-around",
           flexWrap: "wrap",
         }}
       >
         {todos?.map((todo) => (
-          <Card key={todo.id} {...todo} />
+          <Card key={todo.id} {...todo}/>
         ))}
       </div>
     </WithLoader>

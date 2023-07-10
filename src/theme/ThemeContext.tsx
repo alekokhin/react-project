@@ -19,7 +19,7 @@ const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
 
   return (
     <ThemeContext.Provider value={{ isDark, toggleTheme }}>
-          <div style={{ ...theme,  height: "100%", padding: '10px', margin: 0 }}>{children}</div>
+          <div style={{ ...theme,  height: "1000px", padding: '10px', margin: 0 }}>{children}</div>
     </ThemeContext.Provider>
   );
 };
