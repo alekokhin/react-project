@@ -1,3 +1,4 @@
 const User = ()=>{
-    return }
+    return (<h1>users</h1>) 
+}
 export default User
