@@ -12,8 +12,8 @@ const Home = () => {
   return (
     <>
       <div style ={{display:"flex", justifyContent:"space-between",alignItems:"center"}} >
-        <div style={{display:"flex"}}>
-          <Button
+        <div style={{display:"flex",width:"300px",justifyContent:"space-evenly"}}>
+          <Button 
             variant="contained"
             color="primary"
             onClick={() => navigate("/")}
