@@ -11,15 +11,13 @@ type Params = {
 const TodoDetailsPage = () => {
   const { id } = useParams<Params>();
   const [todo, setTodo] = useState("");
-  const [isLoading, setIsLoading] = useState(false);
-
+  const [isLoading, setIsLoading] = useState(true);
+console.log(id)
   useEffect(() => {
     const fetchTodo = async () => {
-      setIsLoading(true);
-
       const { todo } = await get<ToDo>(`https://dummyjson.com/todos/${id}`);
       setTodo(todo);
-      setIsLoading(false);
+      todo&&setIsLoading(false);
     };
     fetchTodo();
   }, []);

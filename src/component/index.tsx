@@ -11,7 +11,7 @@ export const Card = (props: Props) => {
   return (
     <div
       style={{
-        width: "200px",
+        width: "160px",
         height: "100px",
         padding: 10,
               textAlign: "center",

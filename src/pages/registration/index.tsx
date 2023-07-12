@@ -46,10 +46,9 @@ const Registration = () => {
           </div>
         </ThemeProvider>
 
-        <div>
-          {/* Switch between steps */}
+        <div style={{display:"flex", width:"160px",justifyContent:"space-evenly"}}>
           {activeStep > 0 && (
-            <Button
+            <Button 
               variant="contained"
               color="primary"
               onClick={() => {
@@ -60,7 +59,7 @@ const Registration = () => {
               back
             </Button>
           )}
-          <Button
+          <Button 
             variant="contained"
             color="primary"
             onClick={() => {

@@ -16,15 +16,14 @@ export type TodoResponse = { todos: ToDos };
 
 const ToDosPage = () => {
   const [todos, setTodos] = useState<ToDos>();
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const fetchData = async () => {
-      setIsLoading(true);
 
       const { todos } = await get<TodoResponse>("https://dummyjson.com/todos");
       setTodos(todos);
-      setIsLoading(false);
+      todos&&setIsLoading(false);
     };
 
     fetchData();
@@ -36,7 +35,7 @@ const ToDosPage = () => {
         style={{
           marginTop:"50px",
           display: "flex",
-          alignItems: "center",
+          justifyContent:"space-evenly",
           flexWrap: "wrap",
         }}
       >

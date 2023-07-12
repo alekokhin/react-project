@@ -7,7 +7,7 @@ import {
   Email,
   Finish,
   FullName,
-} from "./pages/registration/fullName";
+} from "./pages/registration/user-info";
 import ToDosPage from "./pages/todos";
 import TodoDetailsPage from "./pages/todos/detail";
 
